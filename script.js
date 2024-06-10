@@ -7,6 +7,8 @@ const shades = [
     "#003E41"
 ]
 
+shades.reverse();
+
 const canvas = document.querySelector(".canvas");
 
 function generateGrid(size) {
