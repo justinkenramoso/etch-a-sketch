@@ -48,4 +48,18 @@ gridBtn.addEventListener("click", () => {
 
 })
 
+const gridLinesToggle = document.querySelector("#gridLinesToggle");
+gridLinesToggle.addEventListener("change", () => {
+    const squares = document.querySelectorAll(".square");
+    if (!(gridLinesToggle.checked)) {
+        squares.forEach(square => {
+            square.style.border = "none"
+        })
+    } else {
+        squares.forEach(square => {
+            square.style.border = "1px solid #EEEEEE"
+        })
+    }
+})
+
 generateGrid(16);
