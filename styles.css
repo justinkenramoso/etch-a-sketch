@@ -6,9 +6,10 @@
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #222831;
 }
 
@@ -28,4 +29,26 @@
 .square {
     border: 1px solid #EEEEEE;
     flex-grow: 1;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+#grid-btn {
+    background-color: #EEEEEE;
+    color: #222831;
+    padding: 10px 30px;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #222831;
+    border-radius: 10px;
+}
+
+#grid-btn:hover {
+    cursor: pointer;
+    background-color: #222831;
+    color: #EEEEEE;
+    border: 1px solid #EEEEEE;
+    transition-duration: 0.3s;
 }
